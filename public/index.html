@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es"> 
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Alitas">
+		<meta name="robots" content="index,follow">
+        <title>This is Chowe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+		<script src="https://kit.fontawesome.com/b90bbbdf0b.js" crossorigin="anonymous"></script>
+		<script src="/public/codigo.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+		
+    </head>
+          
+    <body>
+		<header class="header-Containter">		
+				<div class="header-contenido1">
+					<ul class="header-contenido1__list1">
+						<li class="icono tel fa-solid fa-phone"></li>
+						<li class="Parrafo">319-243-56-03</li>
+						<li> <a class="icono fa-regular fa-envelope" href="#form"></a></li>
+						<li class="Parrafo">Chowe@chowe.co</li>						
+					</ul>
+					
+					<ul class="header-contenido1__list2"> 
+						<li><a class="icono header-socialmedia fa-brands fa-facebook-f" href="https://www.facebook.com/chowebogota" target="_blank"></a></li>						
+						<li> <a class="icono header-socialmedia fa-brands fa-instagram" href="https://www.instagram.com/chowebogota/?hl=en" target="_blank"></a></li>
+						<li><a class="icono header-socialmedia fa-brands fa-whatsapp" 
+							href="https://api.whatsapp.com/send?phone=%2B573108639952&fbclid=IwAR3c8nr6WIywLfARdfs7pBANK643L5-OaHM3gO7uxvIS_i-bE3UXo8XbKFo" 
+							target="_blank"></a></li>
+
+						<li><a  class="icono" href="#" target="_blank"><img id="ifood-icon" src="/public/Imagen/Ifood.png"/></a></li><!--Cambiar por ifood-->				
+					</ul>
+				</div>
+								
+				<img class="header-imagen" src="./Imagen/Chowe2.png "/>	
+				<div class="Img-Borde">
+					
+				</div>
+				<!--
+				<div class="header-contenido2">
+					<ul class="header-contenido2__list1">
+						<li class="Parrafo header-menu">Inicio</li>
+						<li class="Parrafo header-menu">Menu</li>
+						<li class="Parrafo header-menu">Tienda</li>
+						<li class="Parrafo header-menu">Contacto</li>						
+					</ul>
+				</div>
+				
+					
+					<ul class="header-contenido2__list2">					
+						<li class="icono header-icons fa-regular fa-motorcycle"></li>
+						<li class="Parrafo">Domicilios</li>
+						<li class="icono header-icons fa-regular fa-cart-shopping"></li>
+					</ul>
+				</div>-->
+		</header>
+		   
+		<main>
+			<section class="body-First-Container">
+				<div class="Opacity-Effect"></div>
+					<div class="body-First-Content">						
+						<h1 id="cambiar" class="Titulo body-First-Tittle">¿chowá? <span id="Color-Chowe">Chowé!!</span></h1>
+						<h2 class="Subtitulo body-First-Par"> Alitas Artesanales con sabor a Casa</h2>
+						<a id="link-Menu" class="TextoBoton body-First-Button" href="#Menu">VER MENU</a>
+					</div>					
+				</section>					
+			</div>
+			
+			<section class="body-Second-Content"> 
+
+				<div class="body-Second-Heading">
+					<h1 class="Titulo body-Second-Tittle">Bienvenidos a CHOWÉ</h1>
+					<h3 class="Parrafo body-Second-Par" style="font-size: 2.5rem;">¿Sabias Qué...? </h3>
+				</div>  
+
+
+				<div class="body-Second-Elements">
+					
+					<div class="body-Second-Description">
+						<h3 class="Parrafo body-Second-Par"><br>
+							 Chowé es una palabra Chibcha que significa "Estoy bien" ó "Estamos bien". <br>	
+							 Nuestra misión es hacer las mejores alitas de pollo!. Nuestro menú está infuenciado por la cocina ancestral
+							 en Chowé queremos preservar nuestros sabores locales, creando en nuestros clientes experiencias únicas.
+							 
+						</h3>
+						<img class="firma">
+						<h3 class="Parrafo cargo">Lopez Dei/CEO</h3>
+						
+					</div>
+
+					<div class="body-Second-Media">
+						<div class="body-Second-Media__One">
+							<img class="body-Second-Img" src="./Imagen/fondo1.jpg">
+							<img class="body-Second-Img" src="./Imagen/2.JPG">
+						</div>
+
+						<div class="body-Second-Media__Two">
+							<img class="body-Second-Img" src="./Imagen/3.JPG">
+							<img class="body-Second-Img" src="./Imagen/decoracion.jpeg">
+						</div>
+					</div>
+				
+				</div>
+
+				<button id="BotonUp" class="button-Up" type="button" onclick="cambiarColor()">Up</button>
+				<div id="Menu">
+
+				</div>
+
+			</section>
+
+			
+			
+			<section  class="body-Third-Content">
+				<div class="body-Third-Heading">
+					<h1 class="Titulo body-Third-Tittle">Nuestro Menú</h1>
+					<h3 class="Parrafo body-Third-Par">Todos los días son días de alitas Chowé.</h3>
+				</div> 
+				
+				<div class="body-third-container">
+					<div id="opcionesMenuContenedor" class="body-Third-Menu">
+						<button id="entradas" class="Menu-Option" type="button" onclick="getMenuItems('entradas')">ENTRADAS</button>
+						<button id="combos" class="activo Menu-Option" onclick="getMenuItems('combos')">COMBOS</button>
+						<button id="salsas" class="Menu-Option" onclick="getMenuItems('salsas')">SALSAS</button>
+						<button id="bebidas" class="Menu-Option" onclick="getMenuItems('bebidas')">BEBIDAS</button>
+					</div>
+						
+				</div>
+				<div class="body-Third-Menu-Wrapper">
+					<h2 id="esconderTexto" class="Subtitulo">Nuestros Combos vienen acompañados con Papas a la francesa y salsa de la casa</h2>
+					<div id="allTheFood">
+
+					</div>						
+				</div>
+
+				<div class="body-Third-Button">
+					<button class="TextoBoton contenido-Boton">¡ORDENA AQUÍ!</button>
+				</div> 
+				
+			</section>
+
+			<section class="body-Forth-Content">
+
+				<div class="body-Forth-Heading">
+					<h1 class="Titulo body-Forth-Tittle">Nuestros Servicios</h1>
+					<h3 class="Parrafo body-Forth-Par">Lorem ipsum dolor sit amet.</h3>
+				</div> 
+
+				<div class="body-Forth-Container">
+					<div class="Forth-Media">
+						<img class="Forth-Media-img" src="/public/Imagen/cateringGrey.JPG">
+						<h2 class="Subtitulo">Catering</h2>	
+						<h4 class="Parrafo">Atendemos las reuniones en tu empresa,eventos especiales, servicio a domicilio; Contáctanos y te enviamos tu cotización.</h4>
+					</div> 
+
+					<div class="Forth-Media">
+						<img class="Forth-Media-img" src="/public/Imagen/pickupblack.JPG">
+						<h2 class="Subtitulo">Para Retirar</h2>	
+						<h4 class="Parrafo"> Estás cerca? Programa tu pedido con la opción de retirar en tienda y disfruta al instante de nuestros maravillosos productos.</h4>
+					</div>
+
+					<div class="Forth-Media">
+						<img class="Forth-Media-img" src="/public/Imagen/fastWatch.JPG">
+						<h2 class="Subtitulo">Entrega Rapida</h2>	
+						<h4 class="Parrafo">En Chowé nos caracterizamos por la puntual rápida y efectiva entrega de nuestros pedidos a nuestros clientes. Anímate y pide el tuyo!</h4>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="body-Fifth-Content">			
+				<div class="body-Fifth-Heading">
+					<h1 class="Titulo body-Fifth-Tittle">#EstoyBien #EstamosBien  #Chowé</h1>
+					<h3 class="Parrafo body-Fifth-Par">Enjoyed your stay at Chowé? Share your moments with us. 
+						Follow us on Instagram and use.</h3>
+				</div> 					
+
+				<div class="body-Fifth-Media-Container">
+					<button id="button-Next" type="button" onclick="scrollRight()"> >>> </button>	
+					<button id="button-Prev" type="button" onclick="leftScroll()"> <<< </button>
+							
+					
+					<div class="body-Fifth-Media">
+						<div class="Wrapper-Fifth-Media">
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/1.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/2.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/3.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/4.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/alascompletas.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/alita.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/alitasysalsas.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/publicidad.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/5.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/6.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/7.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/8.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/9.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/tabla.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/salsas.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/1.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/2.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/3.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/4.JPG"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/alascompletas.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/alita.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/alitasysalsas.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/publicidad.jpeg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/5.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/6.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/7.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/8.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/9.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/tabla.jpg"/></div>
+							<div class="body-Fifth-Cont-Img"><img class="body-Fifth-Img" src="/public/Imagen/salsas.jpeg"/></div>
+						</div>
+						<div id="form"></div>					
+					</div>								
+					
+				</div>
+				
+			</section>			
+			
+			<section class="body-sixth-Content">
+
+				<div class="body-sixth-Heading">
+					<h1 class="Titulo body-sixth-Tittle">Contáctanos</h1>
+					<h3 class="Parrafo body-sixth-Par">Share your moments with us. Follow us on Instagram and use.</h3>
+				</div>				
+				
+				<div class="body-sixth-map">
+					<!--
+					<button  type="button" onclick="mostrarMapa()">MOSTRAR MAPA</button>
+					<button id="ocultar" type="button" onclick="ocultarMapa()">ESCONDER MAPA</button>
+					-->
+					
+					
+					<i id="cerrar" class="fa-solid fa-angles-down" onclick="ocultarMapa()"></i>
+					
+					<div id="Mapa">
+						
+					</div>
+
+					<div class="info-contact">
+						
+						<h3>Celular</h3>
+						<h2>3192435603</h2>
+						<h3>Correo Electrónico</h3>
+						<h2>Chowe@chowe.co</h2>
+						<h3>Ubicación</h3>
+						<i onclick="mostrarMapa()" class=" icon-map fa-solid fa-location-dot"></i>
+						<h2>Encuentranos en Google Maps</h3>
+						<h3>Bosa, Bogotá, Colombia</h3>
+					</div>
+				</div>
+
+				<div class="body-sixth-form">
+					<form class="form-wrapper" action="">
+						<label class="form_text" for="nombre">Nombre</label>
+						<input class="form_text campo-texto" type="text" id="nombre" name="nombre" value=""><br>
+
+						<label class="form_text" for="celular">Celular</label>
+						<input class="form_text campo-texto" type="text" id="ceular" name="celular" value=""><br>
+
+						<label class="form_text" for="correo">Correo Electrónico</label>
+						<input class="form_text campo-texto" type="text" id="correo" name="correo" value=""><br>
+
+						<label class="form_text" for="mensaje">Mensaje</label>
+						<input class="form_text campo-texto" type="mensaje" id="mensaje" name="mensaje" value=""><br>
+
+						<input class="form_text campo-enviar"type="submit"></input>
+					</form>
+				</div>
+				
+
+			</section>
+			
+		</main>	
+		
+
+		<footer> 
+			
+			<div class="Footer-Container">
+				<h2 class="Subtitulo Footer-Text-Location"></h2>
+				<div class="Footer-Container-Map">
+					<div class="Footer-Container-Map-Icon">
+						<i class=></i>
+						<h4 class="Text-Map"></h4>
+					</div>
+				</div>
+			</div>
+			<div class="Copyright">
+				<h6 class="copyright-text">Copyright © 2022 Chowé. Todos los derechos reservados.</h6>
+			</div>			
+			
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3LZ7RS7uD3d7daiRuJxNV-aRgOSpPsjY&callback=myMap"></script>
+		</footer>
+
+	</body>
+	<script src="/public/menu.js"></script>
+   
+</html>
