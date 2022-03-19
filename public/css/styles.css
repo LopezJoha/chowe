@@ -28,6 +28,8 @@ main{
 .Subtitulo{
 	font-size:2rem;
 	font-family: 'Arima Madurai', cursive;
+	display: flex;
+	align-items: center;
 }
 
 .Parrafo{
@@ -482,7 +484,8 @@ main{
 	font-family: 'Arima Madurai', cursive;
 	font-size: 3rem;
 	font-weight: bolder;
-	color:#d5bf0f
+	color:#d5bf0f;
+	margin-right: 5px;
 }
 
 #esconderTexto{
@@ -498,19 +501,20 @@ main{
 }
 
 #allTheFood{
+	display: flex;
 	margin-inline: 3rem;
 }
 
 .food-List{
 	display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    margin-left: 4rem;
+    justify-content: space-between;
+	padding: 0;
 }
 
 .food-List_element{
 	display: flex;
+	align-items: center;
     width: 40%;
     height: 10rem;
     position: relative;
@@ -623,7 +627,6 @@ main{
 	justify-content:space-evenly;
 	align-items: center;
 	margin-top: 1rem;
-	margin-inline: 3rem;
 }
 
 .Forth-Media{
