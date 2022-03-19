@@ -2,7 +2,8 @@
 
 *{
 	margin:0px;
-	padding:0px;	
+	padding:0px;
+	scroll-behavior: smooth;	
 }
 
 header{
@@ -60,6 +61,58 @@ main{
 	cursor: pointer;
 }
 
+#arrowUp{
+	position:fixed;
+	font-size: 3rem;
+	width: 3rem;
+	height: 3rem;
+	bottom: 35rem;
+	right: 3rem;
+	border-radius: 100px;
+	border-color: black;
+	color: grey;
+	z-index: 10;
+	cursor: pointer;
+}
+
+/* CAMBIOS PARA MODIFICAR EL MENU AL MOVER EL MOUSE  */
+
+.cambio_Lista2{
+	list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    visibility: hidden;
+}
+
+.cambio_Lista2:hover{
+	cursor: initial;
+}
+
+.cambio_header_Cont2{
+	background-color: transparent;
+}
+
+.cambio_Lista3{
+	position: absolute;
+	width:100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color:white;
+	margin-right: 10rem;
+	top:0.8rem;
+	right: 2rem;
+}
+
+.cambio_Lista3:hover{
+	cursor: pointer;
+}
+
+/* CAMBIOS PARA MODIFICAR EL MENU AL MOVER EL MOUSE  */
 
 .header-Containter{
 	position: fixed;
@@ -72,7 +125,7 @@ main{
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	padding: 1rem 0;
+	padding: .8rem 0;
 	border-bottom: solid 8px #d5bf0f;
 }
 
@@ -83,9 +136,8 @@ main{
 	display: flex;
 	justify-content:center;
 	align-items: center;
-	color: white;
+	color: white;	
 }
-
 
 .header-contenido1__list1 li{
 	margin-inline: .5rem;
@@ -100,6 +152,7 @@ main{
 	align-items: center;
 	color: white;
 }
+
 
 .header-contenido1__list2 a{
 	color: white;
@@ -129,6 +182,16 @@ main{
 	z-index: 101;	
 }
 
+.img-header{
+	position: absolute;		
+	height: 10rem;
+	width: 10rem;
+	top: -40px;
+	left:50%;
+	transform: translateX(-50%);
+	z-index: 101;
+}
+
 .Img-Borde{
 	position: absolute;
     height: 8rem;
@@ -141,50 +204,65 @@ main{
     border: 3px solid #383948;
 }
 
-
+.borde-img{
+	position: absolute;
+    height: 5rem;
+    width: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -0.4rem;
+    background-color: #383948;
+    border-radius: 4rem;
+    border: 3px solid #383948;
+}
 
 .header-contenido2{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
-	background-color: black;
-	padding: 1rem 0;
+	background-color: #383948;
+	padding: .5rem 0;
+	text-decoration: none;
+	
 }
 
 .header-contenido2__list1{
 	width:100%;
 	list-style: none;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: flex-end;
 	align-items: center;
 	color:white;
-	margin-left: 10rem;
+	margin-right: 10rem;	
 }
 
-.header-menu {
+#opc1, #opc2, #opc3, #opc4{
+	text-decoration: none;
+}
+
+#opc1:hover, #opc2:hover, #opc3:hover, #opc4:hover{
+	cursor: pointer;
+	color:#d5bf0f
+}
+
+#opc1:visited, #opc2:visited, #opc3:visited, #opc4:visited{
+	color:white;
+	
+}
+
+.header-menu{
 	margin-right: 2rem;
+	font-weight: bolder;
+	cursor: pointer;
 }
 
 .header-icons{
 	margin-right: 2rem;
 }
 
-.header-contenido2__list2{
-	width:50%;
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color:white;
-}
-
-.header-contenido2__list2 li{
-	margin-inline: .5rem;
-}
-
 /*BODY*/
 .body-First-Container{
-	height: 36rem;
+	height: 40.4rem;
 	position:relative;
 	background-image: url(/public/Imagen/alascompletas.jpeg);
 	background-size:cover;
@@ -219,7 +297,7 @@ main{
 .body-First-Tittle{
 	text-align: center;	
 	font-family: 'Playfair Display SC', serif;
-    font-size: 5rem;
+    font-size: 6rem;
     text-align: center;
     margin-top: 2rem;
 }
@@ -229,30 +307,38 @@ main{
 }
 
 .body-First-Button{
-	width: 12.5rem;
-	padding: 1.5rem;
-	margin-top: 10px;
-	color:white;
-	background-color: transparent;
-	border: solid white;
-	border-radius: 40px;
-	margin-top: 1rem;
-	text-align: center;
-}
-
-.body-First-Button:hover{
-	background-color: #d5bf0f;
-	color: black;
-	cursor: pointer;
-}
-
-#link-Menu{
 	text-decoration: none;
+	width: 13rem;
+	padding: 1rem;
+	background-color: #d5bf0f;
+	border: solid #383948;
+	border-radius: 40px;
+	margin-top: 2rem;
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 1.8rem;
+	font-weight: 900;
 }
 
-#link-Menu:visited{
-	color:white;
+.body-First-Button:Hover{
+	background-color: #383948;
+	border: solid #d5bf0f;
+	cursor: pointer;
+	color: #d5bf0f;
+	
 }
+
+.body-First-Button span{
+	font-size: 1.5rem;
+	font-family: 'Arima Madurai', cursive;
+	font-weight: 1000;
+	color:#383948;
+}
+
+.body-First-Button span:hover{
+	color:#d5bf0f
+}
+
 
 .body-Second-Heading{
 	display: flex;
@@ -260,6 +346,7 @@ main{
 	justify-content: center;
 	align-items:center;
 	margin-top: 3rem;
+	
 }
 
 .body-Second-Tittle{
@@ -272,6 +359,7 @@ main{
 .body-Second-Par{
 	margin-top: 2rem;
 	text-align: justify;
+	
 }
 
 .body-Second-Elements{
@@ -314,11 +402,12 @@ main{
 	width: 90%;
 	height: 40%;
 	border-radius: 30px;
-	margin:.8rem;	
+	margin:.8rem;
+	box-shadow: 1px 10px 25px rgba(0,0,0,0.5);	
 }
 
 .body-Third-Content{
-	background-color: papayawhip;
+	background-color: white;
 }
 
 .body-Third-Heading{
@@ -365,6 +454,10 @@ main{
 	width: 12rem;
 	padding: 1.2rem;
 	border: solid white;
+	font-family: 'Arima Madurai', cursive;
+    font-size: 1.5rem;
+	color: #383948;
+	font-weight: bolder;
 }
 
 .activo, .Menu-Option:hover{
@@ -373,6 +466,7 @@ main{
 	cursor: pointer;
 	color: white;
 }
+
 
 #entradas{
 	border-bottom-left-radius: 40px;
@@ -385,12 +479,15 @@ main{
 }
 
 #numeroAlitas{
+	font-family: 'Arima Madurai', cursive;
 	font-size: 3rem;
 	font-weight: bolder;
+	color:#d5bf0f
 }
 
 #esconderTexto{
 	visibility: visible;
+	margin-bottom: 1.5rem;
 }
 
 .body-Third-Menu-Wrapper{
@@ -398,6 +495,81 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+#allTheFood{
+	margin-inline: 3rem;
+}
+
+.food-List{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+.food-List_element{
+	display: flex;
+    width: 40%;
+    height: 10rem;
+    position: relative;
+    padding-left: 110px;
+    margin: .3rem;
+    border: #907419 solid 2px;
+    border-radius: 20px;
+	box-shadow: 1px 10px 25px #907419;
+}
+
+.List-element{
+	position: absolute; 
+	top: 50%; 
+	left: 15px; 
+	transform: translateY(-50%);
+}
+
+.List-element-one{
+	width: 75%; 
+	margin-left: 20px;
+}
+
+.List-sub-element-one{
+	display: flex;
+	border-bottom: 2px dotted black; 
+	height: 50%; 
+	justify-content: space-between; 
+	align-items: center;
+	color: #383948;
+	font-weight: bolder;
+}
+
+.List-element-two{
+	height: 50%; 
+	text-align: 
+	justify; 
+	top: 0; 
+	margin: 2.5px;
+	color: #383948;
+	font-weight: bolder;
+}
+
+.parrafo-menu{
+	font-size: 1.5rem;
+	font-family: 'Arima Madurai', cursive;
+}
+
+.food-List_else{
+	display: flex; 
+	flex-direction: column;
+}
+
+.parrafo_else{	
+	text-align: justify; 
+	margin: 2.5px; 
+	font-size: 2rem; 
+	justify-content: 
+	center; align-items: 
+	center; padding: 1rem;
 }
 
 .body-Third-Button{
@@ -410,19 +582,24 @@ main{
 
 
 .contenido-Boton{
-	width: 13rem;
-	padding: 1.5rem;
-	color:black;
-	background-color: transparent;	
+	width: 17rem;
+	padding: 1rem;
+	background-color: #d5bf0f;
+	border: solid #383948;
 	border-radius: 40px;
+	margin-top: 2rem;
+	text-align: center;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 1.8rem;
+	font-weight: 900	
 }
 
 
 .contenido-Boton:hover{
-	background-color: #d5bf0f;
-	color: white;
+	background-color: #383948;
+	border: solid #d5bf0f;
 	cursor: pointer;
-	border: solid white;
+	color: #d5bf0f;
 }
 
 .body-Forth-Heading{
@@ -469,7 +646,7 @@ main{
 
 
 .body-Fifth-Content{
-	background-color: palegoldenrod;	
+	background-color: white;	
 }
 
 .body-Fifth-Heading{
@@ -742,38 +919,34 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-direction: column;	
 }
 
-.Footer-Container-Map{
-	position:relative;
-	width: 9rem;
-	height: 4rem;
+.Footer-Container img{
+	width: 120px;
+	height: 50px;
+	left: 50%;	
 }
 
-
-.Footer-Container-Map-Icon{
-	width: 100%; 
-    height: 100%; 
-    border-radius: 4rem 4rem 0 0;
+.Footer-Container div{
+	width: 33%;
+	height: 15rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.Icon-Map{
-	font-size: 1.9rem;
-	
+.footer_Sec1 .footer_Sec2 .footer_Sec3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.Text-Map{
-	padding-bottom: 0;
-}
-
-.Footer-Text-Location{
-	font-size: 1.5rem;
-	color: #d5bf0f;
+.footer_Sec1 div{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .copyright-text{
@@ -787,6 +960,21 @@ footer{
 	padding-bottom: .3rem;
 }
 
+.footerDelivery ul{
+	display: flex;
+	justify-content: center;
+}
+
+.footerDelivery ul li{
+	width: 10rem;
+	height: 8rem;
+	width: 10rem;
+	font-size: 3rem;
+	border: solid 2px white;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
