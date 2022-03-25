@@ -34,6 +34,7 @@ function getMenuItems(opcionMenu){
         contenido.innerHTML=lista;
 
     }else{
+        
         let lista = "<ul style=\"display: flex; flex-direction: column; justify-content: center;\">";
 
         for(let i = 0; i < menuItems[opcionMenu].length; i++){
@@ -45,10 +46,11 @@ function getMenuItems(opcionMenu){
             </li>`
         }
 
-        lista +="</ul>" 
+        lista +="</ul>"
+
 
         var contenido = document.getElementById("allTheFood");
-        contenido.innerHTML=lista        
+        contenido.innerHTML=lista;        
     }
 }
 
@@ -182,3 +184,5 @@ function mostrarTexto(){
     document.getElementById("esconderTexto").style.visibility="visible"; 
     document.getElementById("esconderTexto").style.height="auto";
 }
+
+

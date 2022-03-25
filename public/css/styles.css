@@ -7,7 +7,7 @@
 }
 
 header{
-	position: relative;	
+	position: relative;		
 }
 
 main{
@@ -20,9 +20,23 @@ main{
 	margin-top: 5px;
 }
 
+#menu-bar{
+	display: none;
+}
+
+.menu-icon{
+	position: absolute;
+	visibility: hidden;
+	z-index: 200;
+	height: 0;
+	width: 0;
+	z-index: 200
+}
+
 .Titulo{
 	font-size: 3rem;
 	font-family: 'Arima Madurai', cursive;
+	
 }
 
 .Subtitulo{
@@ -105,7 +119,7 @@ main{
 	justify-content: flex-end;
 	align-items: center;
 	color:white;
-	margin-right: 10rem;
+	margin-inline: 5rem;
 	top:0.8rem;
 	right: 2rem;
 }
@@ -120,10 +134,11 @@ main{
 	position: fixed;
 	width: 100%;
 	z-index: 100;
+	
 }
 
 .header-contenido1{
-	background-color: #383948;
+	background-color: #383948; 
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -152,7 +167,6 @@ main{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: white;
 }
 
 
@@ -234,28 +248,20 @@ main{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	color:white;
-	margin-right: 10rem;	
-}
-
-#opc1, #opc2, #opc3, #opc4{
-	text-decoration: none;
-}
-
-#opc1:hover, #opc2:hover, #opc3:hover, #opc4:hover{
-	cursor: pointer;
-	color:#d5bf0f
-}
-
-#opc1:visited, #opc2:visited, #opc3:visited, #opc4:visited{
-	color:white;
-	
+	margin-inline: 5rem;
 }
 
 .header-menu{
 	margin-right: 2rem;
 	font-weight: bolder;
+	list-style: none;
 	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.header-menu:hover{
+	color:#d5bf0f;
 }
 
 .header-icons{
@@ -359,9 +365,16 @@ main{
 }
 
 .body-Second-Par{
-	margin-top: 2rem;
+	margin-top: 0;
 	text-align: justify;
 	
+}
+
+.body-Second-Par span{
+	font-size:2rem;
+	font-family: 'Arima Madurai', cursive;
+	display: flex;
+	align-items: center;
 }
 
 .body-Second-Elements{
@@ -417,8 +430,6 @@ main{
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
-	margin-top: 3rem;
-	padding-top: 3rem;
 }
 
 .body-Third-Tittle{
@@ -562,19 +573,19 @@ main{
 	font-family: 'Arima Madurai', cursive;
 }
 
-.food-List_else{
+/* .food-List_else{
 	display: flex; 
 	flex-direction: column;
-}
+} */
 
-.parrafo_else{	
+/* .parrafo_else{	
 	text-align: justify; 
 	margin: 2.5px; 
 	font-size: 2rem; 
 	justify-content: 
 	center; align-items: 
 	center; padding: 1rem;
-}
+} */
 
 .body-Third-Button{
  	display: flex;
@@ -635,7 +646,18 @@ main{
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	border: solid 2px black;
+	margin-inline: 15px;
+	border-radius: 15px;
 }
+
+.Forth-Media:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+	background-color: #d5bf0f;
+}
+
+
 
 .Forth-Media-img{
 	width: 11rem;
@@ -912,9 +934,12 @@ width:150px;
 
 
 footer{	
-	background-color:#383948;
-	color: white;
+	background: rgb(56,57,72);
+	background: linear-gradient(0deg, rgba(56,57,72,1) 0%, rgba(255,255,255,1) 100%);
+	color: #34495E;
 	position:relative;
+	
+	
 }
 
 
@@ -922,17 +947,11 @@ footer{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-top: 2rem;
 }
 
-.Footer-Container img{
-	width: 120px;
-	height: 50px;
-	left: 50%;	
-}
 
 .Footer-Container div{
-	width: 33%;
-	height: 15rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -952,9 +971,39 @@ footer{
 	align-items: center;
 }
 
+.Siguenos{
+	text-shadow: 3px 3px whitesmoke;
+}
+
+.redes-sociales{
+	display: flex;
+	list-style: none;
+}
+
+.redes-sociales li a{
+	color: whitesmoke;
+	font-size: 3rem;
+	margin-inline: 1rem;
+	padding: 1rem;
+	text-shadow: 3px 3px #34495E;
+}
+
+
+.clausula{
+	font-family: 'Arima Madurai', cursive;
+	font-size: 1.2rem;
+	color: whitesmoke;
+	
+}
+
+.clausula:hover{
+	cursor: pointer;
+	color:#d5bf0f;
+}
+
 .copyright-text{
-	color:#383948;
-	background-color: #d5bf0f;
+	color: whitesmoke;
+	background-color: transparent;
 	font-size: 15px;
 	display: flex;
 	justify-content: center;
@@ -972,7 +1021,7 @@ footer{
 	width: 10rem;
 	height: 8rem;
 	width: 10rem;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	border: solid 2px white;
 	display: flex;
     justify-content: center;

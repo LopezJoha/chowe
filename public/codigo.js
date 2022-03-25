@@ -39,31 +39,3 @@ function scrollRight(){
     var right = document.querySelector(".Wrapper-Fifth-Media");
     right.scrollBy(SHIFT_SIZE,0);
 };
-
-function calcularImpuestos(edad, ingresos){
-    if(edad >= 18 & ingresos >= 1000 ){
-        impuestos = ingresos *(40/100);
-        return impuestos
-    } else return 0;
-}
-
-
-function asteriscos(palabra){
-    let contador=0;
-    for (let i = 0; i < palabra.length; i++){
-        if (palabra[i] == '*'){
-            contador+=1;
-            console.log(palabra[i])
-        } 
-    } 
-    return contador
-}
-
-function duplicar(arreglo){
-    let newArray = [];
-    for (let i of arreglo ){
-        let resultado = i *2;
-        newArray.push(resultado)
-    }
-    return newArray;
-}

@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>This is Chowe</title>
 		<link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/medium.css"/>
+		<link rel="stylesheet" type="text/css" href="./css/small.css"/>
 
 		<script src="/public/codigo.js"></script>
 		
@@ -41,13 +43,16 @@
 								
 				<img id="imagen-Header" class="header-imagen" src="./Imagen/Chowe2.png"/>	
 				<div id="borde-Img" class="Img-Borde"></div>
+
+				<!-- class="fa-solid fa-bars menu-icon"  -->
+				<div id="menuBar" class="fa-solid fa-bars menu-icon" onclick="smallNavButton()"></div> 
 				
 				<div id="header_Cont2" class="header-contenido2">	
 					<ul id="header_Lista3" class="header-contenido2__list1">
-						<li ><a id="opc1" class="Parrafo header-menu" href="" target="_top" >Inicio </a></li>
-						<li ><a id="opc2" class="Parrafo header-menu" href="#Menu">Menú</a></li>
-						<li ><a id="opc3" class="Parrafo header-menu" href="#" >Domicilios</a></li>
-						<li ><a id="opc4" class="Parrafo header-menu" href="#" >Contacto</a></li>						
+						<li><a id="opc1" class="Parrafo header-menu" href="" target="_top" >Inicio </a></li>
+						<li><a id="opc2" class="Parrafo header-menu" href="#Menu">Menú</a></li>
+						<li><a id="opc3" class="Parrafo header-menu" href="#" >Domicilios</a></li>
+						<li><a id="opc4" class="Parrafo header-menu" href="#" >Contacto</a></li>						
 					</ul>
 				</div>
 				<script> 
@@ -68,13 +73,15 @@
 			<section id="section2" class="body-Second-Content"> 
 				<div class="body-Second-Heading">
 					<h1 class="Titulo body-Second-Tittle">Bienvenidos a CHOWÉ</h1>
-					<h2 class="Titulo body-Second-Par"">¿Sabias Qué...? </h2>
 				</div>  
-
+				
 				<div class="body-Second-Elements">
 					
 					<div class="body-Second-Description">
-						<h3 class="Parrafo body-Second-Par"><br>
+						<!-- <h2 class="Subtitulo body-Second-Par">¿Sabias Qué...? </h2> -->
+						<h3 class="Parrafo body-Second-Par">
+							<span>¿Sabias Qué...?</span> <br>
+
 							 Chowé es una palabra Chibcha que significa "Estoy bien" ó "Estamos bien". <br>	
 							 Nuestra misión es hacer las mejores alitas de pollo!. Nuestro menú está infuenciado por la cocina ancestral
 							 en Chowé queremos preservar nuestros sabores locales, creando en nuestros clientes experiencias únicas.
@@ -137,14 +144,15 @@
 
 				<div class="body-Forth-Heading">
 					<h1 class="Titulo body-Forth-Tittle">Nuestros Servicios</h1>
-					<h3 class="Parrafo body-Forth-Par">Lorem ipsum dolor sit amet.</h3>
+					<h3 class="Parrafo body-Forth-Par"></h3>
 				</div> 
 
 				<div class="body-Forth-Container">
 					<div class="Forth-Media">
 						<img class="Forth-Media-img" src="/public/Imagen/cateringGrey.JPG">
 						<h2 class="Subtitulo">Catering</h2>	
-						<h4 class="Parrafo">Atendemos las reuniones en tu empresa, eventos especiales, servicio a domicilio; Contáctanos y te enviamos tu cotización.</h4>
+						<h4 class="Parrafo">Atendemos las reuniones en tu empresa, eventos especiales, 
+							servicio a domicilio; Contáctanos y te enviamos tu cotización. Adicionar </h4>
 					</div> 
 
 					<div class="Forth-Media">
@@ -218,7 +226,7 @@
 
 				<div class="body-sixth-Heading">
 					<h1 class="Titulo body-sixth-Tittle">Contáctanos</h1>
-					<h3 class="Parrafo body-sixth-Par">Share your moments with us. Follow us on Instagram and use.</h3>
+					
 				</div>				
 				
 				<div class="body-sixth-map">										
@@ -256,8 +264,7 @@
 
 						<input class="form_text campo-enviar" value="Enviar" type="button" onclick="sendEmail()"></input>
 					</form>
-				</div>				
-
+				</div>
 			</section>
 			
 		</main>	
@@ -266,30 +273,20 @@
 		<footer> 			
 			<div class="Footer-Container">
 				<div class="footer_Sec1">
-					<h3>Política de Privacidad</h3>
-					<h3>Condiciones de Uso</h3>					
-
-				</div>
-
-				<div class="footerDelivery footer_Sec2">
-					<h3>Cómo quieres recibir tus alitas Chowé?</h3>
-						<ul>
-							<li><span class="fa-solid fa-house"></span></li>
-							<li class="fa-solid fa-location-dot"></li>
-						</ul>					
-				</div>
-				<div class="footer_Sec3">
-					<h3>Síguenos en nuestras redes sociales</h3>
-					<ul class="header-contenido1__list2"> 
+					<h3 class="Parrafo Siguenos">Síguenos en nuestras redes sociales</h3>
+					<ul class="redes-sociales"> 
 						<li><a class="icono header-socialmedia fa-brands fa-facebook-f" href="https://www.facebook.com/chowebogota" target="_blank"></a></li>						
 						<li> <a class="icono header-socialmedia fa-brands fa-instagram" href="https://www.instagram.com/chowebogota/?hl=en" target="_blank"></a></li>
 						<li><a class="icono header-socialmedia fa-brands fa-whatsapp" 
 							href="https://api.whatsapp.com/send?phone=%2B573108639952&fbclid=IwAR3c8nr6WIywLfARdfs7pBANK643L5-OaHM3gO7uxvIS_i-bE3UXo8XbKFo" 
-							target="_blank"></a></li>
-
-						<li><a  class="icono" href="#" target="_blank"><img id="ifood-icon" src="/public/Imagen/Ifood.png"/></a></li><!--Cambiar por ifood-->				
+							target="_blank"></a></li>									
 					</ul>
+					<div class="footer_Sec1">
+						<h3 class="clausula">Política de Privacidad</h3>
+						<h3 class="clausula">Condiciones de Uso</h3>	
+					</div>
 				</div>
+				
 			</div>
 
 			<div class="Copyright">
