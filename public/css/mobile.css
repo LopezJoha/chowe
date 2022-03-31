@@ -1,11 +1,12 @@
-@charset "ISO-8859-1";
 :root{
 	--darkBlue: #383948;
 	--yellowChowe: #d5bf0f;
 	--white: whitesmoke;
 	--black:black;
 	--grey: grey;
+    --justWhite: white;
 }
+
 *{
 	box-sizing: border-box;
 	margin:0px;
@@ -14,271 +15,122 @@
 }
 
 html{
-	font-size: 62.5%;
-	font-family: 'Arima Madurai', cursive;
-	overflow-x: hidden;
+    font-family: 'Arima Madurai', cursive;
+    font-size: 62.5%;
 }
 
-header{
-	position: relative;		
-}
 
-main{
-	padding: 3rem 0 0 0;
-}
-
-#ifood-icon{
-	height: 25px;
-	width: 25px;
-	margin-top: 5px;
-}
-
-#menu-bar{
-	display: none;
-}
-
-.menu-icon{
-	position: absolute;
-	visibility: hidden;
-	z-index: 200;
-	height: 0;
-	width: 0;
-	z-index: 200
-}
 
 .Titulo{
-	font-size: 3rem;
-		
+    font-size: 4rem;
+    text-align: center;
+    text-align-last: center;
+    line-height: 4rem;
 }
 
 .Subtitulo{
-	font-size:2rem;
-	font-family: 'Arima Madurai', cursive;
-	display: flex;
-	align-items: center;
+    font-size:2rem;
+    text-align: center;
 }
 
 .Parrafo{
 	font-size: 1.5rem;
+    text-align: center;
 }
 
-.icono{
-	font-size: 1.5rem;
-	color: white;
-	cursor: pointer;
-	list-style: none;
-	text-decoration: none;
+
+
+header{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background-color: transparent;  
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);  
 }
 
-.icono:hover{
-	color: #d5bf0f;
-	cursor: pointer;
+.header-imagen{ 
+    position: absolute;  
+    height: 12rem;
+    width: 12rem;
+    top: -1.5rem;
+    left: 0;
+    z-index: 110;
 }
 
-#arrowUp{
-	position:fixed;
-	font-size: 3rem;
-	width: 3rem;
-	height: 3rem;
-	bottom: 35rem;
-	right: 3rem;
-	border-radius: 100px;
-	border-color: black;
-	color: grey;
-	z-index: 10;
-	cursor: pointer;
+.menu-icon{
+    font-size: 3.5rem;
+    visibility: visible;
+    position: absolute;
+    top: .60rem;
+    right: 2rem;
+    z-index: 100;
+    color: whitesmoke;
+    cursor: pointer;
 }
 
-/* CAMBIOS PARA MODIFICAR EL MENU AL MOVER EL MOUSE  */
 
-.cambio_Lista2{
-	list-style: none;
-    width: 50%;
+.navBar{
+    visibility: hidden;
+    position:absolute;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    top:5rem;
+    background-color: rgb(0, 0, 0, 0.4);
+    z-index: 100;	
+}
+
+.navBar span{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    margin: auto;
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+}
+
+.nav-item{
+    color: var(--white);
+    text-decoration: none;  
+}
+
+.navBar span:hover{
+    color: var(--yellowChowe);
+}
+
+.nav-item:hover{
+    color: var(--yellowChowe);
+    cursor: pointer;
+}
+
+.visible{
+    visibility: visible;
+}
+
+#header_Lista1, #header_Lista2{
     visibility: hidden;
+    height: 0;
 }
-
-.cambio_Lista2:hover{
-	cursor: initial;
-}
-
-.cambio_header_Cont2{
-	background-color: transparent;
-}
-
-.cambio_Lista3{
-	position: absolute;
-	width:100%;
-	list-style: none;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	color:white;
-	margin-inline: 5rem;
-	top:0.8rem;
-	right: 2rem;
-}
-
-.cambio_Lista3:hover{
-	cursor: pointer;
-}
-
-/* CAMBIOS PARA MODIFICAR EL MENU AL MOVER EL MOUSE  */
-
-.header-Containter{
-	position: fixed;
-	width: 100%;
-	z-index: 100;
-	
-}
-
-.header-Container-Listas{
-	background-color: #383948; 
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding: .8rem 0;
-	border-bottom: solid 8px #d5bf0f;
-}
-
-.header-contenido1__list1{
-	list-style: none;
-	width: 50%;
-	margin-right: 5rem;
-	display: flex;
-	justify-content:center;
-	align-items: center;
-	color: white;	
-}
-
-.header-contenido1__list1 li{
-	margin-inline: .5rem;
-}
-
-.header-contenido1__list2{
-	list-style: none;
-	width:50%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.header-contenido1__list2 a{
-	color: white;
-	text-decoration: none;
-}
-
-.header-contenido1__list2 a:hover{
-	color: #d5bf0f;
-	cursor: pointer;
-}
-
-.header-socialmedia{
-	margin-right: 3rem;
-}
-
-.header-icons{
-	color: white;
-}
-
-.header-imagen{
-	position: absolute;		
-	height: 12rem;
-	width: 12rem;
-	top: -40px;
-	left:50%;
-	transform: translateX(-50%);
-	z-index: 101;	
-}
-
-.img-header{
-	position: absolute;		
-	height: 10rem;
-	width: 10rem;
-	top: -40px;
-	left:50%;
-	transform: translateX(-50%);
-	z-index: 101;
-}
-
-.Img-Borde{
-	position: absolute;
-    height: 8rem;
-    width: 8rem;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -0.4rem;
-    background-color: #383948;
-    border-radius: 4rem;
-    border: 3px solid #383948;
-}
-
-.borde-img{
-	position: absolute;
-    height: 5rem;
-    width: 5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -0.4rem;
-    background-color: #383948;
-    border-radius: 4rem;
-    border: 3px solid #383948;
-}
-
-.header-contenido2{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
-	background-color: #383948;
-	padding: .5rem 0;
-	text-decoration: none;	
-}
-
-.header-contenido2__list1{
-	width:100%;
-	list-style: none;
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	margin-inline: 5rem;
-}
-
-.header-menu{
-	margin-right: 2rem;
-	font-weight: bolder;
-	list-style: none;
-	cursor: pointer;
-	color: white;
-	text-decoration: none;
-}
-
-.header-menu:hover{
-	color:#d5bf0f;
-}
-
-.header-icons{
-	margin-right: 2rem;
-}
-
-/*BODY*/
 
 .body-First-Container{
-	height: 40.4rem;
+    min-width: 300px;
+	height: 100vh;
+    top:-5rem;
 	position:relative;
 	background-image: url(/public/Imagen/alascompletas.jpeg);
-	background-size:cover;
-} 
+    background-size:cover;
+    background-repeat: no-repeat;   
+    background-position: center; 
+}
 
 .Opacity-Effect{
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: 0.7;
+	opacity: 0.6;
 }
+
 
 .body-First-Content{
 	height: 100%;
@@ -293,7 +145,7 @@ main{
 	z-index: 5;
 } 
 
-#Color-Chowe{
+.Color-Chowe{
 	color: #d5bf0f;
 	
 }
@@ -302,13 +154,14 @@ main{
 	font-family: 'Playfair Display SC', serif;
     font-size: 6rem;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 7rem;
+    line-height: 7rem;
 }
 
-.body-First-Button{
+.Button{
 	text-decoration: none;
-	width: 13rem;
-	padding: 1rem;
+	width: 14rem;
+	padding: 0.5rem;
 	background-color: #d5bf0f;
 	border: solid #383948;
 	border-radius: 40px;
@@ -319,79 +172,89 @@ main{
 	font-weight: 900;
 }
 
-.body-First-Button:Hover{
+.Button:Hover{
 	background-color: #383948;
 	border: solid #d5bf0f;
 	cursor: pointer;
 	color: #d5bf0f;	
 }
 
-.body-First-Button span{
+.Button span{
 	font-size: 1.5rem;
 	font-family: 'Arima Madurai', cursive;
 	color:#383948;
 }
 
-.body-First-Button span:hover{
+.Button span:hover{
 	color:#d5bf0f
 }
 
 .body-Second-Heading{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	margin-top: 3rem;	
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin-top: 3rem;	
 }
 
 .body-Second-Tittle{
-	margin-top: 2rem;
-	text-align: center;
-	font-size: 3.5rem;
-    font-weight: bold;
+    margin-bottom: 1rem;      
 }
 
-.body-Second-Elements{
-	padding-inline: 4.5rem;
-	display: flex;
+.body-Second-Elements{     
+    flex-direction: column;
+    text-align: center;        
 }
+
 .body-Second-Description{
-	width:30%;
-	margin-right: 4.5rem;
-	display: flex;
-	flex-direction: column;
-	justify-content:space-evenly;
+    width:100%;
+    margin-right: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
 }
+
+.body-Second-Content{
+    display: flex;
+    flex-direction: column;
+} 
 
 .body-Second-Par{
-	margin-top: 0;
-	text-align: center;
-	justify-self: center;	
+    margin-top: -.3rem;
+    text-align: center;
+    justify-self: center;	
 }
 
+.body-Third-Par{
+    height: 5rem;
+}
+
+.body-Third-Par span{
+    visibility: hidden;        
+}
 
 .body-Second-Media{
-	width:70%;
-	display: flex;
-	justify-content: space-between;	
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;	
 }
 
 .body-Second-Media__One{
-	width:50%;
-	display: flex;
+    width:100%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: center;    
 }
 
 .body-Second-Media__Two{
-	margin-top: 2rem;
-	width: 50%;
-	display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
+    justify-content: center;    
 }
+
 
 .body-Second-Img{
 	width: 90%;
@@ -401,36 +264,47 @@ main{
 	box-shadow: 1px 10px 25px rgba(0,0,0,0.5);	
 }
 
+.spanArrowUp{
+    position:fixed;	
+	bottom: 2rem;
+	right: 2rem;
+	color: var(--darkBlue);
+	z-index: 9;
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#arrowUp{
+	font-size: 3rem;
+    text-decoration: none;	
+	color: var(--darkBlue);
+	z-index: 10;
+	cursor: pointer;
+}
+
+
 .body-Third-Heading{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
+    padding-bottom: 1.5rem; 
 }
 
-.body-Third-Tittle{
-	margin-top: 2rem;
-}
-
-.body-Third-Par{
-	margin-top: 2rem;
-}
-
-.body-third-container{
-	display: flex;
-	justify-content: center;
-	margin-top: 3rem;
-}
 
 .body-Third-Menu{
-	display:inherit;	
-	box-shadow: 0 0 10px grey;
-	border-bottom-left-radius: 40px;
-	border-top-left-radius: 40px;
-	border-bottom-right-radius: 40px;
-	border-top-right-radius: 40px;	
-	margin-bottom: 3rem;
-	background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 3rem;
+    padding: 1rem;
+    box-shadow: 1px 10px 25px rgba(0,0,0,0.1);	
+    border-radius: 3rem;
+    
 }
 
 .body-Third-Menu:hover{
@@ -441,10 +315,10 @@ main{
 	background-color: white;
 	border: none;
 	width: 12rem;
-	padding: 1.2rem;
+	padding: 0.5rem;
 	border: solid white;
 	font-family: 'Arima Madurai', cursive;
-    font-size: 1.5rem;
+    font-size: 2rem;
 	color: #383948;
 	font-weight: bolder;
 }
@@ -454,30 +328,33 @@ main{
 	background-color: #d5bf0f;
 	cursor: pointer;
 	color: white;
+    text-shadow: 1px 1.5px black;
 }
 
 
-#entradas{
-	border-bottom-left-radius: 40px;
-	border-top-left-radius: 40px;	
+#numeroAlitas {
+    color: var(--yellowChowe);
+    margin-right: 5px;
+    font-size: 3rem;
+    position: absolute;
+    left: -12px;
+    bottom: 10px;
+    line-height: -2px;
 }
 
-#bebidas{
-	border-bottom-right-radius: 40px;
-	border-top-right-radius: 40px;	
-}
-
-#numeroAlitas{
-	font-family: 'Arima Madurai', cursive;
-	font-size: 3rem;
-	font-weight: bolder;
-	color:#d5bf0f;
-	margin-right: 5px;
-}
+/* .alitas{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+} */
 
 #esconderTexto{
 	visibility: visible;
 	margin-bottom: 1.5rem;
+    visibility: visible;
+    height: auto;
+    margin-inline: 2.5rem;
+    text-align-last: center;
 }
 
 .body-Third-Menu-Wrapper{
@@ -489,50 +366,63 @@ main{
 
 #allTheFood{
 	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin-inline: 3rem;
 }
 
 .food-List{
 	display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
-	padding: 0;
+    
 }
 
 .food-List_element{
 	display: flex;
+    justify-content: center;
 	align-items: center;
-    width: 40%;
-    height: 10rem;
     position: relative;
-    padding-left: 110px;
-    margin: .3rem;
+    padding: .5rem;
+    margin: 0.5rem;
     border: #907419 solid 2px;
     border-radius: 20px;
-	box-shadow: 1px 10px 25px #907419;
+	box-shadow: 1px 1px 10px #907419;
 }
 
-.List-element{
-	position: absolute; 
-	top: 50%; 
-	left: 15px; 
-	transform: translateY(-50%);
+.img-list-element{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+
 }
 
-.List-element-one{
-	width: 75%; 
-	margin-left: 20px;
+.List-element-one {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .List-sub-element-one{
 	display: flex;
 	border-bottom: 2px dotted black; 
-	height: 50%; 
+	 
 	justify-content: space-between; 
 	align-items: center;
 	color: #383948;
 	font-weight: bolder;
 }
+
+.sub-menu {
+    line-height: 2rem;
+    font-size: 1.8rem;
+    text-align-last: right;
+    text-align: center;
+    position: relative;
+    padding-left: 2.2rem;
+}
+
 
 .List-element-two{
 	height: 50%; 
@@ -547,6 +437,7 @@ main{
 .parrafo-menu{
 	font-size: 1.5rem;
 	font-family: 'Arima Madurai', cursive;
+    margin-inline: .5rem;
 }
 
 .food-List_else{
@@ -555,7 +446,7 @@ main{
 } 
 
 .parrafo_else{	
-	text-align: justify; 
+	text-align: center; 
 	margin: 2.5px; 
 	font-size: 2rem; 
 	justify-content: 
@@ -571,83 +462,36 @@ main{
 	padding-bottom: 3rem;
 }
 
-
-.contenido-Boton{
-	width: 17rem;
-	padding: 1rem;
-	background-color: #d5bf0f;
-	border: solid #383948;
-	border-radius: 40px;
-	margin-top: 2rem;
-	text-align: center;
-	font-family: 'Arima Madurai', cursive;
-	font-size: 1.8rem;
-	font-weight: 900	
-}
-
-
-.contenido-Boton:hover{
-	background-color: #383948;
-	border: solid #d5bf0f;
-	cursor: pointer;
-	color: #d5bf0f;
-}
-
-.body-Forth-Heading{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;	
-	margin-top: 3rem;
-}
-
-.body-Forth-Tittle{
-	margin-top: 2rem;
-}
-
-.body-Forth-Par{
-	margin-top: 2rem;
-}
-
 .body-Forth-Container{
-	display: flex;
-	justify-content:space-evenly;
-	align-items: center;
-	margin-top: 1rem;
+    display: flex;
+    gap: 4rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
-.Forth-Media{
-	display: flex;
-	flex-direction: column;
+
+.Forth-Media {
+    display: flex;
+    flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	width: 100%;
-	border: solid 2px black;
-	margin-inline: 15px;
-	border-radius: 15px;
+	align-items: center;    
+    min-width: 23rem;
+    max-width: 30rem;
+    height: 25rem;
+    margin: 3rem auto 0;
+    padding: 0 1.5rem;
+    background-color: var(--justWhite);
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+    scroll-snap-align: center;
 }
-
-.Forth-Media:hover{
-	transform: scale(1.2);
-	cursor: pointer;
-	background-color: #d5bf0f;
-}
-
 
 .Forth-Media-img{
 	width: 11rem;
 	height: 8rem;
 }
- 
-.Forth-Media h2, h4{
-	text-align: center;
-	padding: 10px;	
-}
 
-
-.body-Fifth-Content{
-		
-}
 
 .body-Fifth-Heading{
 	display: flex;
@@ -663,8 +507,8 @@ main{
 }
 
 .body-Fifth-Par{
-	margin-top: 2rem;
-	margin-bottom: 2rem;
+	margin: 2rem;
+	
 }
 
 .body-Fifth-Media-Container{
@@ -674,6 +518,7 @@ main{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+    
 }
 
 .body-Fifth-Media{
@@ -723,13 +568,14 @@ width:150px;
 
 
 .body-Fifth-Img{
-	width: 30rem;
+	width: 23rem;
 	height: 15rem;
 	border-radius: 30px;
 	margin:1px 10px;
 	cursor:pointer;
 	border:2px solid black;
 	overflow: hidden;
+    scroll-snap-align: center;
 }
 
 
@@ -770,28 +616,24 @@ width:150px;
 
 .body-sixth-Content{
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
 .body-sixth-Heading{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items:center;
-	margin-top: 3rem;
-	padding-top: 3rem;	
+	margin-top: 2rem;
+	padding-top: 2rem;	
 }
 
 .body-sixth-map{
 	position: relative;
-	width: 45%;
+    width:90%;
 	height: 25rem;
 	justify-content: center;
 	align-items: center;
 }
+
 
 #Mapa{
 	position: absolute;
@@ -818,7 +660,6 @@ width:150px;
 	cursor: pointer;
 	color: black;
 	left: 50%;
-	transform: translateX(-50%);
 	top: 5px;
 	z-index: 110;
 }
@@ -829,23 +670,22 @@ width:150px;
 }
 
 .info-contact{
-	position: absolute;
+    font-family: 'Arima Madurai', cursive;
+	font-size: 1.8rem;
+    text-align: center;
+	position: relative;
+    margin-top:2rem;
     display: flex;
 	flex-direction: column;
-    width: 100%;
-    color: black;
     justify-content: center;
-    align-items: center;	
+    align-items: center;
+    color: var(--darkBlue);
+
 }
 
 .info-contact h2{
 	font-family: 'Arima Madurai', cursive;
-	font-size: 1.5rem;
-}
-
-.info-contact{
-	font-family: 'Arima Madurai', cursive;
-	font-size: 1rem;
+	font-size: 1.7rem;
 }
 
 .icon-map{
@@ -861,14 +701,14 @@ width:150px;
 
 
 .body-sixth-form{
-	width:45%;
+	margin-top: 2rem;
 	padding: 20px;
 }
 
 .form-wrapper{
 	display: flex;
 	flex-direction: column;
-	padding: 0 7rem 0 7rem ;
+	;
 	justify-content: center;
 	
 }
@@ -903,7 +743,7 @@ width:150px;
 
 .form_text{
 	font-family: 'Arima Madurai', cursive;
-	font-size:large;
+	font-size:1.8rem;
 	font-weight: 3px;	
 }
 
@@ -954,9 +794,11 @@ footer{
 .redes-sociales{
 	display: flex;
 	list-style: none;
+    
 }
 
 .redes-sociales li a{
+    text-decoration: none;
 	color: whitesmoke;
 	font-size: 3rem;
 	margin-inline: 1rem;
@@ -980,29 +822,13 @@ footer{
 .copyright-text{
 	color: whitesmoke;
 	background-color: transparent;
-	font-size: 15px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	font-size: 1.3rem;
+    text-align: center;	
 	padding-top:.3rem;
 	padding-bottom: .3rem;
 }
 
-.footerDelivery ul{
-	display: flex;
-	justify-content: center;
-}
 
-.footerDelivery ul li{
-	width: 10rem;
-	height: 8rem;
-	width: 10rem;
-	font-size: 2.5rem;
-	border: solid 2px white;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 

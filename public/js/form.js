@@ -42,7 +42,7 @@ function moveMenu(){
 };
 
 function smallNavButton(){
-    let menuSmall = document.getElementById("header_Cont2");  
+    let menuSmall = document.getElementById("header_Lista3");  
     menuSmall.classList.toggle('visible');
 };
 
