@@ -43,9 +43,24 @@ function moveMenu(){
 
 function smallNavButton(){
     let menuSmall = document.getElementById("header_Lista3");  
-    menuSmall.classList.toggle('visible');
+    menuSmall.classList.toggle('visible');  
+  
+    
 };
 
+// function detectMove(){
+//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//         console.log("lo esta detectando")
+//     }
+// }
 
 
-
+window.addEventListener('scroll', function(){
+    let menuSmall = document.getElementById("header_Lista3");
+    if (menuSmall.classList == 'visible'){
+        menuSmall.classList.toggle('navBar');
+    } else{       
+        menuSmall.className = "navBar"
+    }     
+    
+});

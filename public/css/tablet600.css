@@ -1,0 +1,45 @@
+
+.Titulo{
+    font-size: 5rem;
+    text-align: center;
+    line-height: 4rem;
+}
+
+.Subtitulo {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-inline: 2rem;
+}
+
+.Parrafo{
+	font-size: 2rem;
+    text-align: center;
+}
+
+.header-imagen {
+    position: absolute;
+    height: 15rem;
+    width: 15rem;
+    top: -1rem;
+    left: 0;
+    z-index: 110;
+}
+
+.menu-icon {
+    visibility: hidden;    
+}
+
+.navBar {
+    color: white;
+    z-index: 100;
+    visibility: visible;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    background: transparent;
+    top: 2rem;
+    /* width: 50%; */
+    justify-content: space-evenly;
+    /* align-items: center; */
+    /* left: 0; */
+}

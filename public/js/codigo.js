@@ -12,14 +12,13 @@ function mostrarMapa(){
     console.log('Esta funcionando')
     document.getElementById("Mapa").style.overflow="hidden";
     document.getElementById("Mapa").style.visibility="visible";
-    document.getElementById("Mapa").style.height="25rem";
+    document.getElementById("Mapa").style.height="26rem";
     document.getElementById("Mapa").style.width="100%";
-    document.getElementById("Mapa").style.left="5%";
     document.getElementById("Mapa").style.border="2px solid black";
     document.getElementById("Mapa").style.zIndex="99"; 
     document.getElementById("cerrar").style.visibility="visible";
 
- };
+};
 
 function ocultarMapa(){
     console.log("Esconder Mapa")

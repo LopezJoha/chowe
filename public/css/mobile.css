@@ -19,8 +19,6 @@ html{
     font-size: 62.5%;
 }
 
-
-
 .Titulo{
     font-size: 4rem;
     text-align: center;
@@ -28,17 +26,16 @@ html{
     line-height: 4rem;
 }
 
-.Subtitulo{
-    font-size:2rem;
+.Subtitulo {
+    font-size: 2rem;
     text-align: center;
+    margin-inline: 2rem;
 }
 
 .Parrafo{
 	font-size: 1.5rem;
     text-align: center;
 }
-
-
 
 header{
     position: relative;
@@ -68,16 +65,15 @@ header{
     cursor: pointer;
 }
 
-
 .navBar{
     visibility: hidden;
     position:absolute;
     width:100%;
     display: flex;
     flex-direction: column;
-    top:5rem;
+    top: 1rem;
     background-color: rgb(0, 0, 0, 0.4);
-    z-index: 100;	
+    z-index: 99;	
 }
 
 .navBar span{
@@ -105,6 +101,9 @@ header{
 
 .visible{
     visibility: visible;
+}
+.hidden{
+	visibility: hidden;
 }
 
 #header_Lista1, #header_Lista2{
@@ -146,8 +145,7 @@ header{
 } 
 
 .Color-Chowe{
-	color: #d5bf0f;
-	
+	color: #d5bf0f;	
 }
 
 .body-First-Tittle{
@@ -255,7 +253,6 @@ header{
     justify-content: center;    
 }
 
-
 .body-Second-Img{
 	width: 90%;
 	height: 40%;
@@ -273,8 +270,7 @@ header{
 	cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 #arrowUp{
@@ -285,7 +281,6 @@ header{
 	cursor: pointer;
 }
 
-
 .body-Third-Heading{
 	display: flex;
 	flex-direction: column;
@@ -293,7 +288,6 @@ header{
 	align-items:center;
     padding-bottom: 1.5rem; 
 }
-
 
 .body-Third-Menu{
     display: flex;
@@ -331,22 +325,15 @@ header{
     text-shadow: 1px 1.5px black;
 }
 
-
 #numeroAlitas {
     color: var(--yellowChowe);
     margin-right: 5px;
     font-size: 3rem;
     position: absolute;
     left: -12px;
-    bottom: 10px;
+    bottom: 0;
     line-height: -2px;
 }
-
-/* .alitas{
-    visibility: hidden;
-    width: 0;
-    height: 0;
-} */
 
 #esconderTexto{
 	visibility: visible;
@@ -375,8 +362,7 @@ header{
 .food-List{
 	display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 
 .food-List_element{
@@ -396,7 +382,6 @@ header{
     width: 7rem;
     border-radius: 50%;
     padding: 0.5rem;
-
 }
 
 .List-element-one {
@@ -406,8 +391,7 @@ header{
 
 .List-sub-element-one{
 	display: flex;
-	border-bottom: 2px dotted black; 
-	 
+	border-bottom: 2px dotted black; 	 
 	justify-content: space-between; 
 	align-items: center;
 	color: #383948;
@@ -492,7 +476,6 @@ header{
 	height: 8rem;
 }
 
-
 .body-Fifth-Heading{
 	display: flex;
 	flex-direction: column;
@@ -507,8 +490,7 @@ header{
 }
 
 .body-Fifth-Par{
-	margin: 2rem;
-	
+	margin: 2rem;	
 }
 
 .body-Fifth-Media-Container{
@@ -517,8 +499,7 @@ header{
 	height: 20rem;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-    
+	justify-content: space-between;    
 }
 
 .body-Fifth-Media{
@@ -529,23 +510,23 @@ header{
 
 
 .body-Fifth-Media::before{
-position: absolute;
-content:"";
-left:0;
-top:0;
-z-index: 99;
-height: 100%;
-width:150px;
+	position: absolute;
+	content:"";
+	left:0;
+	top:0;
+	z-index: 99;
+	height: 100%;
+	width:150px;
 }
 
 .body-Fifth-Media::after{
-position: absolute;
-content:"";
-right:0;
-top:0;
-z-index: 99;
-height: 100%;
-width:150px;
+	position: absolute;
+	content:"";
+	right:0;
+	top:0;
+	z-index: 99;
+	height: 100%;
+	width:150px;
 }
 
 
@@ -629,19 +610,16 @@ width:150px;
 .body-sixth-map{
 	position: relative;
     width:90%;
-	height: 25rem;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-
 
 #Mapa{
 	position: absolute;
 	overflow: hidden;
     visibility: hidden;
     height: 25rem;
-    width: 100%;
-    left: 5%;
     border: 2px solid black;
 	z-index: 99;
 }
@@ -680,7 +658,6 @@ width:150px;
     justify-content: center;
     align-items: center;
     color: var(--darkBlue);
-
 }
 
 .info-contact h2{
@@ -708,7 +685,6 @@ width:150px;
 .form-wrapper{
 	display: flex;
 	flex-direction: column;
-	;
 	justify-content: center;
 	
 }
@@ -793,8 +769,7 @@ footer{
 
 .redes-sociales{
 	display: flex;
-	list-style: none;
-    
+	list-style: none;    
 }
 
 .redes-sociales li a{
@@ -810,8 +785,7 @@ footer{
 .clausula{
 	font-family: 'Arima Madurai', cursive;
 	font-size: 1.2rem;
-	color: whitesmoke;
-	
+	color: whitesmoke;	
 }
 
 .clausula:hover{
