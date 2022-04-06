@@ -9,14 +9,17 @@ function myMap() {
 };
 
 function mostrarMapa(){
-    console.log('Esta funcionando')
     document.getElementById("Mapa").style.overflow="hidden";
-    document.getElementById("Mapa").style.visibility="visible";
-    document.getElementById("Mapa").style.height="26rem";
+    document.getElementById("Mapa").style.visibility="visible";    
     document.getElementById("Mapa").style.width="100%";
     document.getElementById("Mapa").style.border="2px solid black";
     document.getElementById("Mapa").style.zIndex="99"; 
     document.getElementById("cerrar").style.visibility="visible";
+    if (window.innerWidth < 600){
+        document.getElementById("Mapa").style.height="26rem";
+    } else{
+        document.getElementById("Mapa").style.height="30rem";
+    }
 
 };
 

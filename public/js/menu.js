@@ -44,7 +44,7 @@ function getMenuItems(opcionMenu){
             </li>`
         }
     }else{
-        lista += "<ul style=\"display: flex; flex-direction: column; justify-content: center;\">";
+        lista += "<ul class=\"food-List\">";
 
         for(let i = 0; i < menuItems[opcionMenu].length; i++){
             var obj= menuItems[opcionMenu][i];
@@ -67,8 +67,8 @@ var menuItems = {
     entradas:[
         {
         imagen:"/public/Small/smallAros.jpg",
-        title:"Aros de cebolla",
-        par:"Deliciosos aritos de cebolla crujientes.",
+        title:"Aritos",
+        par:"Aritos de cebolla.",
         price:4000
         },
         {
@@ -79,50 +79,50 @@ var menuItems = {
         },
         {
         imagen:"/public/Small/smallPapas2.jpg",
-        title:"Papas a la Francesa",
-        par:"Bastoncitos de papas freidos.",
+        title:"Papitas&nbsp;Fritas",
+        par:"Papitas fritas.",
         price:4000
         },
         {
         imagen:"/public/Small/smallPapas3.jpg",
-        title:"Papas Artesanales",
-        par:"Deliciosas papas en cascos.",
+        title:"Papas",
+        par:"Papitas en cascos.",
         price:4000
         },
         {
         imagen:"/public/Small/smallYuquitas.jpg",
-        title:"Croquetas de Yuca",
-        par:"Deliciosas tiras de Yuca freidas.",
+        title:"Yuquitas",
+        par:"Yuquita freida.",
         price:4000
         },
         {
         imagen:"/public/Small/smallYuquitas.jpg",
-        title:"Croquetas de Yuca",
-        par:"Deliciosas tiras de Yuca freidas.",
+        title:"Yuquitas",
+        par:"Yuca freida.",
         price:4000
         },
     ],
     combos:[{
         imagen:"/public/Small/small1.jpg",
-        title:`<span id="numeroAlitas">08</span> Piezas <span class="alitas">de alitas </span>`,
+        title:`<span id="numeroAlitas">08</span><span class="alitas">&nbsp;Alitas</span>`,
         par:"Bañadas en 1 salsa",
         price: 15900
         },
         {
         imagen:"/public/Small/small2.jpg",
-        title:`<span id="numeroAlitas">16</span> Piezas <span class="alitas">de alitas</span>`,
+        title:`<span id="numeroAlitas">16</span><span class="alitas">&nbsp;Alitas</span>`,
         par:"Bañadas en 2 salsas", 
         price: 27900
             },
         {
         imagen:"/public/Small/small3.jpg",
-        title:`<span id="numeroAlitas">24</span> Piezas <span class="alitas">de alitas</span>`,
+        title:`<span id="numeroAlitas">24</span><span class="alitas">&nbsp;Alitas</span>`,
         par:"Bañadas en 3 salsas",
         price: 37900
         },
         {
         imagen:"/public/Small/small4.jpg",
-        title:`<span id="numeroAlitas">32</span> Piezas <span class="alitas">de alitas</span>`,
+        title:`<span id="numeroAlitas">32</span><span class="alitas">&nbsp;Alitas</span>`,
         par:"Bañadas en 4 salsas",
         price: 47900
         },        
@@ -138,26 +138,26 @@ var menuItems = {
     bebidas:[
         {
         imagen:"/public/Small/smallSoda.jpg",
-        title:"Gaseosa 400 ml",
-        par:"Productos marca Postobón",
+        title:"Gaseosa&nbsp;400ml",
+        par:"Productos Postobón",
         price:2500
         },
         {
         imagen:"/public/Small/smallSoda.jpg",
-        title:"Gaseosa 1.5 L",
-        par:"Productos marca Postobón",
+        title:"Gaseosa&nbsp;1.5L",
+        par:"Productos Postobón",
         price:4000
         },
         {
         imagen:"/public/Small/smallSoda.jpg",
-        title:"Gaseosa 3.125 L",
-        par:"Productos marca Postobón",
+        title:"Gaseosa&nbsp;3.125L",
+        par:"Productos Postobón",
         price:6000
         },
         {
         imagen:"/public/Small/smallSoda.jpg",
-        title:"Gaseosa 3.125 L",
-        par:"Productos marca Postobón",
+        title:"Gaseosa&nbsp;3.125L",
+        par:"Productos Postobón",
         price:6000
         },
         ]

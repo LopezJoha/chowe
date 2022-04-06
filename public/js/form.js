@@ -23,7 +23,7 @@ function sendEmail() {
 
 function moveMenu(){
 
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50 && window.innerWidth >= 600) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("header_Lista2").className = "cambio_Lista2";
         document.getElementById("header_Lista3").className = "cambio_Lista3";
         document.getElementById("header_Cont2").className = "cambio_header_Cont2";
@@ -47,13 +47,6 @@ function smallNavButton(){
   
     
 };
-
-// function detectMove(){
-//     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//         console.log("lo esta detectando")
-//     }
-// }
-
 
 window.addEventListener('scroll', function(){
     let menuSmall = document.getElementById("header_Lista3");
