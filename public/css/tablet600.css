@@ -1,4 +1,3 @@
-
 .Titulo{
     font-size: 5rem;
     text-align: center;
@@ -20,7 +19,7 @@
     position: absolute;
     height: 13rem;
     width: 13rem;
-    top: -2rem;
+    top: -.5rem;
     left: 0;
     z-index: 110;
 }
@@ -38,12 +37,17 @@
     justify-content: center;
     align-items: center;
     background: transparent;
-    top: 2rem;  
+    top: 3rem;  
     padding-left: 15rem;
     padding-right: 4rem;
-    font-size: larger;
     font-weight: bolder;
     text-shadow: 1px 1px var(--yellowChowe);
+}
+
+@media only screen and (min-width: 800px){
+    .navBar {
+        padding-left: 25rem;
+    }
 }
 
 .navBar span{
@@ -97,41 +101,57 @@
     font-size: 5rem;
 }
 
+.body-Third-Menu{
+    max-width: 52.5rem;
+}
+
 .Menu-Option {
     width: 12.5rem;
     font-size: 2.3rem;
 }
 
+
 .food-List {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .food-List_element {
-    width: 48%;
+    min-width: 32rem;
 }
 
-.img-list-element {
-    position: absolute;
-    height: 7rem;
-    width: 7rem;
-    border-radius: 50%;
-    padding: 0.5rem;
-    top: 0.5rem;
-    left: 0.5rem;
+.img-list-element{
+    height: 8rem;
+    width: 8rem;
 }
 
-.List-element-one {
-    padding: 0.5rem;
-    margin-right: 0.5rem;
-	margin-left: 8rem;
+.titulo-menu{
+    font-size: 2.7rem;
+}
+
+.parrafo-menu{
+    font-size: 2rem;
+}
+
+.List-element-one{
+	min-width: 28rem;
+	padding-left: 11rem;
+}
+
+.parrafo_else {
+    font-size: 2.5rem;
 }
 
 .Forth-Media {
-    min-width: 35rem;
+    min-width: 30rem;
     max-width: 40rem;
     height: 38rem;
-
+}
+.Forth-Media h2{
+    font-size: 3rem;
 }
 
 .Forth-Media-img {

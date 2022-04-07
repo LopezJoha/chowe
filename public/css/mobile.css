@@ -227,6 +227,13 @@ header{
     justify-self: center;	
 }
 
+.body-Third-Content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
 .body-Third-Par{
     height: 5rem;
 }
@@ -331,15 +338,8 @@ header{
     text-shadow: 1px 1.5px black;
 }
 
-#numeroAlitas {
-    color: var(--yellowChowe);
-    margin-right: 5px;
-    font-size: 3rem;
-    position: absolute;
-    left: -12px;
-    bottom: 0;
-    
-}
+
+
 
 #esconderTexto{
 	visibility: visible;
@@ -370,7 +370,8 @@ header{
 }
 
 .food-List_element{
-	display: flex;
+	min-width: 26rem;
+	display: flex;	
     justify-content: center;
 	align-items: center;
     position: relative;
@@ -382,50 +383,32 @@ header{
 }
 
 .img-list-element {
+    position: absolute;
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
     padding: 0.5rem;
+    top: 0.5rem;
+    left: 0.5rem;
 }
 
-.List-element-one {
-    padding: 0.5rem;
-    margin-right: 0.5rem;	
+.List-element-one{	
+	padding-left: 9rem;
 }
 
-.List-sub-element-one{
-	display: flex;
-	border-bottom: 2px dotted black; 	 
-	justify-content: space-between; 
-	align-items: center;
-	color: #383948;
-	font-weight: bolder;
+#numeroAlitas {
+    color: var(--yellowChowe);            
 }
 
-.sub-menu {
+.titulo-menu {
     line-height: 2rem;
-    font-size: 1.8rem;
-    text-align-last: right;
-    text-align: center;
-    position: relative;
-    padding-left: 2.2rem;
-}
-
-
-.List-element-two{
-	height: 50%; 
-	text-align: 
-	justify; 
-	top: 0; 
-	margin: 2.5px;
-	color: #383948;
-	font-weight: bolder;
+    font-size: 2rem;
+    padding-top: .5rem;
 }
 
 .parrafo-menu{
 	font-size: 1.5rem;
-	font-family: 'Arima Madurai', cursive;
-    margin-inline: .5rem;
+    
 }
 
 .food-List_else{
@@ -437,9 +420,9 @@ header{
 	text-align: center; 
 	margin: 2.5px; 
 	font-size: 2rem; 
-	justify-content: 
-	center; align-items: 
-	center; padding: 1rem;
+	justify-content: center; 
+	align-items: center;
+	padding: 1rem;
 }
 
 .body-Third-Button{
@@ -453,9 +436,13 @@ header{
 .body-Forth-Container{
     display: flex;
     gap: 4rem;
-    overflow-x: scroll;
+    overflow-x: auto;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+}
+
+.body-Forth-Container::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
 
 .Forth-Media {
@@ -471,6 +458,7 @@ header{
     background-color: var(--justWhite);
     border-radius: 1.5rem;
     box-shadow: 0 4px 8px rgba(89,73,30,0.16);
+	border: solid 1px var(--grey);
     scroll-snap-align: center;
 }
 
@@ -485,6 +473,13 @@ header{
 .Forth-Media-img{
 	width: 11rem;
 	height: 8rem;
+}
+
+.Forth-Media h2{
+	font-size: 2rem;
+	font-weight: bolder;
+	color: black;
+	text-shadow: 1px 1px #34495E;
 }
 
 .body-Fifth-Heading{

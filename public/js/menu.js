@@ -30,16 +30,12 @@ function getMenuItems(opcionMenu){
             
             lista+= 
             `<li class="food-List_element">
-                <div class="List-element" > 
-                    <img src=${obj.imagen} class="img-list-element" />
-                </div>
-
+                <img src=${obj.imagen} class="img-list-element" />            
                 <div class="List-element-one">
-                    <div class="List-sub-element-one">
-                        <h1 class="sub-menu">${obj.title}</h1>
-                        <p class="parrafo-menu">$${obj.price}</p>
-                    </div>
-                    <p class="parrafo-menu List-element-two">${obj.par}</p>
+                    <h1 class="titulo-menu">${obj.title}</h1>
+                    <p class="parrafo-menu">${obj.par}</p>
+                    <p class="parrafo-menu">$${obj.price}</p>                
+
                 </div>
             </li>`
         }
@@ -174,3 +170,17 @@ function mostrarTexto(){
 }
 
 
+/* <div class="List-sub-element-one">
+<div class="List-element" > 
+                    <img src=${obj.imagen} class="img-list-element" />
+                </div>
+                        <div>
+                            <h1 class="sub-menu">${obj.title}</h1>
+                        </div>
+                        <div>
+                            <p class="parrafo-menu">${obj.par}</p>
+                        </div>
+                    </div>
+                    <div class="List-element-two">
+                        <p class="parrafo-menu">$${obj.price}</p>                        
+                    </div> */
