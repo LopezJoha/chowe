@@ -1,0 +1,39 @@
+.header-imagen {
+    position: absolute;
+    height: 18rem;
+    width: 18rem;
+    top: -.5rem;
+    left: 6rem; 
+}
+
+.body-Second-Par{
+    margin-bottom: 2rem;
+    font-size: 3rem;
+}
+
+
+.body-Third-Par span{
+    display: inline-block;
+    visibility: visible;      
+    margin-top: 2rem;
+    text-align: center;    
+}
+
+.body-Second-Content, .body-Third-Content{
+    margin-bottom: 4rem;
+}
+
+.body-Second-Description {
+    width: 40%;
+    margin-right: 0;
+    margin-top: -35rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-list-element {
+    height: 8rem;
+    width: 12rem;
+    border-radius: 15%;
+}
+

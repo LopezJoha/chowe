@@ -15,12 +15,12 @@
     text-align: center;
 }
 
-.header-imagen {
+.header-imagen{
     position: absolute;
     height: 13rem;
     width: 13rem;
     top: -.5rem;
-    left: 0;
+    left: 1rem;
     z-index: 110;
 }
 
@@ -34,21 +34,15 @@
     visibility: visible;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     background: transparent;
     top: 3rem;  
-    padding-left: 15rem;
     padding-right: 4rem;
     font-weight: bolder;
     text-shadow: 1px 1px var(--yellowChowe);
 }
 
-@media only screen and (min-width: 800px){
-    .navBar {
-        padding-left: 25rem;
-    }
-}
 
 .navBar span{
     display: flex;
@@ -101,9 +95,33 @@
     font-size: 5rem;
 }
 
+.body-Second-Elements{
+	display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.body-Second-Description{
+    width: 40%;
+    margin-right: 0;
+    margin-top: -10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-Second-Media{
+    width:60%;    
+}
+
+.body-Third-Heading h2{
+    margin: 1.5rem 0; 
+}
+
 .body-Third-Menu{
     max-width: 52.5rem;
+    margin: 1.5rem 0;
 }
+
 
 .Menu-Option {
     width: 12.5rem;
@@ -115,7 +133,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
@@ -136,10 +154,10 @@
     font-size: 2rem;
 }
 
-.List-element-one{
+/* .List-element-one{
 	min-width: 28rem;
-	padding-left: 11rem;
-}
+	
+} */
 
 .parrafo_else {
     font-size: 2.5rem;
@@ -178,6 +196,24 @@ img.body-Fifth-Img {
 	width: 80vh;
 }
 
-.form_text {
+.form_text{
     font-size: 2.2rem;
+}
+
+#button-Prev{
+    left: 1rem; 
+
+}
+
+#button-Next{
+    right: 1rem;
+}
+
+
+@media only screen and (min-width: 800px){
+    .body-sixth-Wrapper{
+        display: inline-flex;
+        flex-direction: row;   
+          
+    }    
 }

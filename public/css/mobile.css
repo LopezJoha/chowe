@@ -22,7 +22,7 @@ html{
 .Titulo{
     font-size: 4rem;
     text-align: center;
-    text-align-last: center;
+	text-align-last: center;
     line-height: 4rem;
 }
 
@@ -42,8 +42,9 @@ header{
     width: 100%;
     height: 5rem;
     background-color: transparent;  
-    border-bottom: 2px solid rgb(0, 0, 0, 0.1);  
+    border-bottom: 2px solid rgb(0, 0, 0, 0.1);  	
 }
+
 
 .header-imagen{ 
     position: absolute;  
@@ -80,7 +81,6 @@ header{
 }
 
 .navBar span{
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,6 +158,10 @@ header{
     text-align: center;
     margin-top: 7rem;
     line-height: 7rem;
+}
+
+.body-First-Par{
+	color: var(--white);
 }
 
 .Button{
@@ -279,7 +283,7 @@ header{
 	bottom: 2rem;
 	right: 2rem;
 	color: var(--darkBlue);
-	z-index: 9;
+	z-index: 120;
 	cursor: pointer;
     display: flex;
     justify-content: center;
@@ -338,9 +342,6 @@ header{
     text-shadow: 1px 1.5px black;
 }
 
-
-
-
 #esconderTexto{
 	visibility: visible;
 	margin: 1.8rem;
@@ -374,7 +375,6 @@ header{
 	display: flex;	
     justify-content: center;
 	align-items: center;
-    position: relative;
     padding: .5rem;
     margin: 0.5rem;
     border: #907419 solid 2px;
@@ -383,17 +383,18 @@ header{
 }
 
 .img-list-element {
-    position: absolute;
+    float: left; 
     height: 7rem;
     width: 7rem;
     border-radius: 50%;
-    padding: 0.5rem;
-    top: 0.5rem;
-    left: 0.5rem;
+	margin: 1rem 1rem;
 }
 
 .List-element-one{	
-	padding-left: 9rem;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #numeroAlitas {
@@ -401,7 +402,7 @@ header{
 }
 
 .titulo-menu {
-    line-height: 2rem;
+    line-height: 1.5;
     font-size: 2rem;
     padding-top: .5rem;
 }
@@ -514,45 +515,22 @@ header{
 	height: auto;
 }
 
-
-.body-Fifth-Media::before{
-	position: absolute;
-	content:"";
-	left:0;
-	top:0;
-	z-index: 99;
-	height: 100%;
-	width:150px;
-}
-
-.body-Fifth-Media::after{
-	position: absolute;
-	content:"";
-	right:0;
-	top:0;
-	z-index: 99;
-	height: 100%;
-	width:150px;
-}
-
-
-.Wrapper-Fifth-Media{
-	left: 3.5rem;
-	width:92%;
-	display: flex;
-	height: auto;	
-	justify-content: left;
-	align-items: center;
-	overflow:auto;
+.Wrapper-Fifth-Media {
 	position: relative;
-	scroll-behavior: smooth;
-	scroll-snap-align: center;
+    left: 4rem; 
+    width: 98vw;
+    display: flex;
+    height: auto;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;    
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
 }
 
 .Wrapper-Fifth-Media::-webkit-scrollbar{
 	-webkit-appearance: none;
 }
-
 
 .body-Fifth-Img{
 	width: 23rem;
@@ -565,39 +543,35 @@ header{
     scroll-snap-align: center;
 }
 
+#button-Prev {
+    position: absolute;
+	left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index: 100;
+    padding: 1rem;
+	background-color: var(--yellowChowe);
 
-
-#button-Prev{
-	position:absolute;	
-	left: 10px;	
-	top: 50%;
-  	-ms-transform: translateY(-50%);
- 	transform: translateY(-50%);
-	height: 3rem;
-	width: 3rem;
-	border-radius: 100px;
-	background-color: white;
-	border: solid 1px black;
-	z-index: 100;
+	
 }
 
 #button-Next{
-	position:absolute;	
-	right: 10px;
-	top:50%;
-	-ms-transform: translateY(-50%);
-	transform: translateY(-50%);
-	height: 3rem;
-	width: 3rem;
-	border-radius: 100px;
-	background-color: white;
-	border: solid 1px black;
-	z-index: 100;
+	position: absolute;
+	right: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    z-index: 100;
+    padding: 1rem;
+	background-color: var(--yellowChowe);
+	
 }
 
 #button-Prev:hover, #button-Next:hover{
-	background-color: #d5bf0f;
-	color:white;
+	color: var(--grey);
 	cursor: pointer;
 }
 
@@ -613,10 +587,19 @@ header{
 	padding-top: 2rem;	
 }
 
+.body-sixth-Wrapper{
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-evenly;
+	align-items: center;
+}
+
 .body-sixth-map{
 	position: relative;
-    width:90%;
+    width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -628,6 +611,7 @@ header{
     height: 25rem;
     border: 2px solid black;
 	z-index: 99;
+	top:0;
 }
 
 #ocultar{
@@ -654,7 +638,8 @@ header{
 }
 
 .info-contact{
-    font-family: 'Arima Madurai', cursive;
+	width: 90%;
+	font-family: 'Arima Madurai', cursive;
 	font-size: 1.8rem;
     text-align: center;
 	position: relative;
@@ -688,8 +673,8 @@ header{
 	color: #d5bf0f;
 }
 
-
 .body-sixth-form{
+	width: 100%;
 	margin-top: 2rem;
 	padding: 20px;
 }
@@ -698,12 +683,20 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
+	align-items: center;	
+}
+
+.form_text{
+	max-width: 80%;
+	font-family: 'Arima Madurai', cursive;
+	font-size:1.8rem;
+	font-weight: bolder;	
 }
 
 .campo-texto{	
 	box-sizing: border-box;
-	width:100%;
+	min-width: 70%;
+	max-width:80%;
 	border: 1px solid black;
 	border-radius: 7px;
 	padding: .6rem;
@@ -712,7 +705,8 @@ header{
 
 
 .campo-enviar{
-	width: 100%;
+	min-width: 70%;
+	max-width: 90%;
 	background-color: #383948;
 	color: white;
 	padding: .6rem;
@@ -728,12 +722,6 @@ header{
 	color: black;
 }
 
-
-.form_text{
-	font-family: 'Arima Madurai', cursive;
-	font-size:1.8rem;
-	font-weight: bolder;	
-}
 
 
 
@@ -790,7 +778,6 @@ footer{
 	padding: 1rem;
 	text-shadow: 3px 3px #34495E;
 }
-
 
 .clausula{
 	font-family: 'Arima Madurai', cursive;

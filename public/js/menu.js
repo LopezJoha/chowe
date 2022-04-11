@@ -67,36 +67,36 @@ var menuItems = {
         par:"Aritos de cebolla.",
         price:4000
         },
-        {
-        imagen:"/public/Small/smallChicharron.jpg",
-        title:"Chicharrones",
-        par:"Trocitos de chicharron.",
-        price:4000
-        },
-        {
-        imagen:"/public/Small/smallPapas2.jpg",
-        title:"Papitas&nbsp;Fritas",
-        par:"Papitas fritas.",
-        price:4000
-        },
-        {
-        imagen:"/public/Small/smallPapas3.jpg",
-        title:"Papas",
-        par:"Papitas en cascos.",
-        price:4000
-        },
-        {
-        imagen:"/public/Small/smallYuquitas.jpg",
-        title:"Yuquitas",
-        par:"Yuquita freida.",
-        price:4000
-        },
-        {
-        imagen:"/public/Small/smallYuquitas.jpg",
-        title:"Yuquitas",
-        par:"Yuca freida.",
-        price:4000
-        },
+        // {
+        // imagen:"/public/Small/smallChicharron.jpg",
+        // title:"Chicharrones",
+        // par:"Trocitos de chicharron.",
+        // price:4000
+        // },
+        // {
+        // imagen:"/public/Small/smallPapas2.jpg",
+        // title:"Papitas&nbsp;Fritas",
+        // par:"Papitas fritas.",
+        // price:4000
+        // },
+        // {
+        // imagen:"/public/Small/smallPapas3.jpg",
+        // title:"Papas",
+        // par:"Papitas en cascos.",
+        // price:4000
+        // },
+        // {
+        // imagen:"/public/Small/smallYuquitas.jpg",
+        // title:"Yuquitas",
+        // par:"Yuquita freida.",
+        // price:4000
+        // },
+        // {
+        // imagen:"/public/Small/smallYuquitas.jpg",
+        // title:"Yuquitas",
+        // par:"Yuca freida.",
+        // price:4000
+        // },
     ],
     combos:[{
         imagen:"/public/Small/small1.jpg",
@@ -133,29 +133,23 @@ var menuItems = {
         {nombre: "Especial Chowé"}],
     bebidas:[
         {
-        imagen:"/public/Small/smallSoda.jpg",
+        // imagen:"/public/Small/smallSoda.jpg",
         title:"Gaseosa&nbsp;400ml",
         par:"Productos Postobón",
         price:2500
         },
         {
-        imagen:"/public/Small/smallSoda.jpg",
+        // imagen:"/public/Small/smallSoda.jpg",
         title:"Gaseosa&nbsp;1.5L",
         par:"Productos Postobón",
         price:4000
         },
         {
-        imagen:"/public/Small/smallSoda.jpg",
+        // imagen:"/public/Small/smallSoda.jpg",
         title:"Gaseosa&nbsp;3.125L",
         par:"Productos Postobón",
         price:6000
-        },
-        {
-        imagen:"/public/Small/smallSoda.jpg",
-        title:"Gaseosa&nbsp;3.125L",
-        par:"Productos Postobón",
-        price:6000
-        },
+        },        
         ]
 };
 

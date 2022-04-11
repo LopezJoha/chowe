@@ -11,15 +11,16 @@ function myMap() {
 function mostrarMapa(){
     document.getElementById("Mapa").style.overflow="hidden";
     document.getElementById("Mapa").style.visibility="visible";    
-    document.getElementById("Mapa").style.width="100%";
+    document.getElementById("Mapa").style.width="90%";
     document.getElementById("Mapa").style.border="2px solid black";
     document.getElementById("Mapa").style.zIndex="99"; 
     document.getElementById("cerrar").style.visibility="visible";
-    if (window.innerWidth < 600){
-        document.getElementById("Mapa").style.height="26rem";
-    } else{
-        document.getElementById("Mapa").style.height="30rem";
-    }
+    document.getElementById("Mapa").style.height="26rem";
+    // if (window.innerWidth < 600){
+    //     document.getElementById("Mapa").style.height="26rem";
+    // } else{
+    //     // document.getElementById("Mapa").style.height="30rem";
+    // }
 
 };
 
