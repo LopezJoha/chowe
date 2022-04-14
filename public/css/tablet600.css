@@ -43,7 +43,6 @@
     text-shadow: 1px 1px var(--yellowChowe);
 }
 
-
 .navBar span{
     display: flex;
     justify-content: center;
@@ -95,6 +94,26 @@
     font-size: 5rem;
 }
 
+.WhatsApp{
+	position:fixed;	
+	top: 20rem;
+	right: 2rem;
+	color: var(--whatsapp);
+	z-index: 120;
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+}
+
+#Wp {
+	font-size: 6rem;
+    text-decoration: none;	
+	color: var(--whatsapp);
+	z-index: 10;
+	cursor: pointer;	
+}
+
 .body-Second-Elements{
 	display: flex;
     flex-direction: row;
@@ -109,25 +128,23 @@
     align-items: center;
 }
 
-.body-Second-Media{
+.body-Second-Media {
     width:60%;    
 }
 
-.body-Third-Heading h2{
+.body-Third-Heading h2 {
     margin: 1.5rem 0; 
 }
 
-.body-Third-Menu{
+.body-Third-Menu {
     max-width: 52.5rem;
     margin: 1.5rem 0;
 }
-
 
 .Menu-Option {
     width: 12.5rem;
     font-size: 2.3rem;
 }
-
 
 .food-List {
     display: flex;
@@ -143,21 +160,16 @@
 
 .img-list-element{
     height: 8rem;
-    width: 8rem;
+    max-width: 8rem;
 }
 
-.titulo-menu{
+.titulo-menu {
     font-size: 2.7rem;
 }
 
-.parrafo-menu{
+.parrafo-menu {
     font-size: 2rem;
 }
-
-/* .List-element-one{
-	min-width: 28rem;
-	
-} */
 
 .parrafo_else {
     font-size: 2.5rem;
@@ -183,8 +195,7 @@ img.body-Fifth-Img {
 }
 
 .info-contact{    
-	font-size: 2.3rem;
-    
+	font-size: 2.3rem;    
 }
 
 .info-contact, h2, a{
@@ -202,18 +213,15 @@ img.body-Fifth-Img {
 
 #button-Prev{
     left: 1rem; 
-
 }
 
 #button-Next{
     right: 1rem;
 }
 
-
 @media only screen and (min-width: 800px){
     .body-sixth-Wrapper{
         display: inline-flex;
-        flex-direction: row;   
-          
+        flex-direction: row;             
     }    
 }

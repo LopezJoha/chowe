@@ -16,12 +16,7 @@ function mostrarMapa(){
     document.getElementById("Mapa").style.zIndex="99"; 
     document.getElementById("cerrar").style.visibility="visible";
     document.getElementById("Mapa").style.height="26rem";
-    // if (window.innerWidth < 600){
-    //     document.getElementById("Mapa").style.height="26rem";
-    // } else{
-    //     // document.getElementById("Mapa").style.height="30rem";
-    // }
-
+    
 };
 
 function ocultarMapa(){

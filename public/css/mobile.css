@@ -1,17 +1,18 @@
-:root{
-	--darkBlue: #383948;
-	--yellowChowe: #d5bf0f;
-	--white: whitesmoke;
-	--black:black;
-	--grey: grey;
-    --justWhite: white;
-}
-
 *{
 	box-sizing: border-box;
 	margin:0px;
 	padding:0px;
 	scroll-behavior: smooth;	
+}
+
+:root{
+	--darkBlue: #383948;
+	--yellowChowe: #d5bf0f;
+	--white: #f5f5f5;
+	--black:black;
+	--grey: grey;
+    --justWhite: white;
+	--whatsapp: #25D366;
 }
 
 html{
@@ -53,6 +54,12 @@ header{
     top: -1.5rem;
     left: 0;
     z-index: 110;
+	transition: width 2s, height 2s, transform 2s;
+}
+
+.header-imagen:hover{
+	cursor: pointer; 
+	transform: rotate(360deg);
 }
 
 .menu-icon{
@@ -120,10 +127,12 @@ header{
 	height: 100vh;
     top:-5rem;
 	position:relative;
-	background-image: url(/public/Imagen/alascompletas.jpeg);
+	background-image: url(/public/assets/Imagen/alascompletas.jpeg);
     background-size:cover;
     background-repeat: no-repeat;   
     background-position: center; 
+	background-color: var(--darkBlue);
+  	background-blend-mode: screen;
 }
 
 .Opacity-Effect{
@@ -235,7 +244,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center;	
 }
 
 .body-Third-Par{
@@ -296,6 +305,27 @@ header{
 	color: var(--darkBlue);
 	z-index: 10;
 	cursor: pointer;
+}
+
+.WhatsApp{
+	position:fixed;	
+	top: 8.5rem;
+	right: 2rem;
+	color: var(--whatsapp);
+	z-index: 120;
+	cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;	
+}
+
+#Wp{
+	font-size: 3rem;
+    text-decoration: none;	
+	color: var(--whatsapp);
+	z-index: 120;
+	cursor: pointer;
+	
 }
 
 .body-Third-Heading{
@@ -517,6 +547,7 @@ header{
 
 .Wrapper-Fifth-Media {
 	position: relative;
+	z-index: 195;
     left: 4rem; 
     width: 98vw;
     display: flex;
@@ -550,11 +581,9 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    z-index: 100;
+    z-index: 200;
     padding: 1rem;
-	background-color: var(--yellowChowe);
-
-	
+	background-color: var(--yellowChowe);	
 }
 
 #button-Next{
@@ -564,10 +593,9 @@ header{
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    z-index: 100;
+    z-index: 200;
     padding: 1rem;
-	background-color: var(--yellowChowe);
-	
+	background-color: var(--yellowChowe);	
 }
 
 #button-Prev:hover, #button-Next:hover{
@@ -722,16 +750,11 @@ header{
 	color: black;
 }
 
-
-
-
-footer{	
-	background: rgb(56,57,72);
-	background: linear-gradient(0deg, rgba(56,57,72,1) 0%, rgba(255,255,255,1) 100%);
+footer{		
+	background-image: linear-gradient(0deg, rgba(56,57,72,1) 10%, rgba(255,255,255,1) 100%);
 	color: #34495E;
 	position:relative;
 }
-
 
 .Footer-Container{
 	display: flex;
@@ -739,7 +762,6 @@ footer{
 	align-items: center;
 	padding-top: 2rem;
 }
-
 
 .Footer-Container div{
 	display: flex;
